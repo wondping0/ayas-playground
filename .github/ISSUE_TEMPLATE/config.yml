@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Private security report
+    url: mailto:wondev.support@gmail.com
+    about: Report vulnerabilities without publishing exploit details.
+  - name: Setup and troubleshooting
+    url: https://github.com/wondping0/ayas-playground/blob/main/SUPPORT.md
+    about: Read support guidance before opening an issue.

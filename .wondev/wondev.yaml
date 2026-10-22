@@ -1,0 +1,36 @@
+# wondev configuration.
+#
+# Everything in this directory is the single source of truth for AI agent knowledge.
+# Run `wondev build` to compile it into each agent's native config format.
+#
+# Known targets: agents, aider, claude, cline, continue, copilot, cursor, devin, gemini, guide, junie, kiro, roo, windsurf
+#
+# To support an agent that is not listed, add it under customTargets:
+#
+#   customTargets:
+#     my-agent:
+#       engine: single-file      # or rule-dir
+#       path: .myagent/context.md
+#
+# A memory index states what each memory document costs to load and when it is worth
+# loading, so an agent reads the two documents it needs instead of all of them. wondev
+# writes the table into a managed region; prose you put around it is left alone.
+#
+#   index:
+#     file: docs/memory-index.md
+#     budget: 8000             # fail `wondev check` if always-on context exceeds this
+#     columns:                 # extra columns, read from your own frontmatter keys
+#       - { key: owner, label: Owner }
+name: ayas-playground
+targets:
+  - claude
+  - agents
+  - guide
+
+index:
+  file: docs/memory-index.md
+  budget: 8000
+
+# Written by wondev. Used to detect when `wondev migrate` is needed.
+schema: 1
+wondevVersion: 1.1.1

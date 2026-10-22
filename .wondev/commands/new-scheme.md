@@ -1,0 +1,18 @@
+---
+description: Add a cryptography scheme to the marketplace taxonomy
+---
+
+Add a new crypto scheme to the taxonomy.
+
+Ask for the scheme id (kebab-case), display name, the tell that identifies it, and the typical
+mechanics, then:
+
+1. Add the entry to `src/lib/catalog/taxonomy.ts`, in the same shape as the existing ones.
+2. Add the row to the table in `.wondev/memory/crypto-taxonomy.md`, keeping the two in sync.
+3. Decide the sandbox profile it usually needs — `python-crypto` or `sage` — and say so if it
+   is one of the heavier ones.
+4. Update the taxonomy integrity test: unique ids, every scheme reachable from the filter UI.
+5. Run `npm test -- catalog` and `npx wondev build`.
+
+Do not add a scheme speculatively. A filter facet with no listings behind it makes the catalog
+look emptier than it is.

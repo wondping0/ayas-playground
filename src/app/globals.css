@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Cool paper, not cream. The page is open; the goods are what is sealed. */
+    --paper: 242 244 247;
+    --surface: 255 255 255;
+    --ink: 20 26 46;
+    --muted: 91 100 120;
+    --rule: 200 206 218;
+    /* Brass — a wax seal, and the brass of a cipher machine. */
+    --seal: 139 86 25;
+    --verify: 30 111 92;
+    --danger: 158 43 43;
+  }
+
+  .dark {
+    --paper: 14 18 32;
+    --surface: 22 28 46;
+    --ink: 226 231 240;
+    --muted: 143 154 176;
+    --rule: 48 58 84;
+    --seal: 214 155 76;
+    --verify: 78 174 148;
+    --danger: 214 106 106;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    font-feature-settings: 'kern' 1;
+  }
+
+  ::selection {
+    background: rgb(var(--seal) / 0.28);
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--seal));
+    outline-offset: 2px;
+  }
+
+  /* Tabular numerals everywhere a figure is compared against another figure. */
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply font-mono text-eyebrow uppercase text-muted;
+  }
+
+  .rule-t {
+    @apply border-t border-rule;
+  }
+
+  /* The catalogue band — entries are ruled rows, not floating cards. */
+  .band {
+    @apply border-b border-rule transition-colors duration-150;
+  }
+
+  .band:hover {
+    background: rgb(var(--surface));
+  }
+
+  .field {
+    min-height: 44px;
+    @apply w-full border border-rule bg-surface px-3 py-2 font-mono text-sm text-ink
+           placeholder:text-muted focus:border-seal;
+  }
+
+  .btn {
+    min-height: 44px;
+    cursor: pointer;
+    @apply inline-flex items-center justify-center gap-2 border px-4 py-2 font-sans text-sm
+           font-medium transition-colors duration-150 disabled:cursor-not-allowed
+           disabled:opacity-45;
+  }
+
+  .btn-primary {
+    @apply btn border-ink bg-ink text-paper hover:bg-transparent hover:text-ink;
+  }
+
+  .btn-seal {
+    @apply btn border-seal bg-seal text-white hover:bg-transparent hover:text-seal;
+  }
+
+  .btn-quiet {
+    @apply btn border-rule bg-transparent text-ink hover:border-ink;
+  }
+
+  header nav a, header nav button {
+    @apply inline-flex min-h-11 items-center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

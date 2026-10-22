@@ -1,0 +1,29 @@
+name: Many Time Pad
+author: aya
+category: crypto
+description: |
+  A one-time pad is unbreakable exactly once. This operator used theirs five
+  times, and got sloppy about what they sent.
+
+  One of the five plaintexts is a pangram every typist knows. The last one is
+  the flag.
+value: 250
+tags: [xor, otp, keystream]
+attribution: Written for Aya's Playground.
+
+aya:
+  scheme: stream-otp
+  difficulty: easy
+  flag:
+    mode: generate
+    format: "ayactf{%s}"
+    generator: server_files/generate.py
+  solver:
+    entrypoint: solver/solve.py
+    profile: python-crypto
+    timeoutMs: 30000
+  license: event
+
+hints:
+  - content: If you know one plaintext, you know the keystream.
+    cost: 0

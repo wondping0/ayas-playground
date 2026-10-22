@@ -1,0 +1,29 @@
+name: Shared Primes
+author: aya
+category: crypto
+description: |
+  Two RSA moduli were generated on the same afternoon, by the same tired script,
+  from the same pool of "random" primes. Only one of them encrypts anything you
+  care about.
+
+  Recover the message.
+value: 300
+tags: [rsa, gcd, factoring]
+attribution: Written for Aya's Playground.
+
+aya:
+  scheme: rsa-weakness
+  difficulty: easy
+  flag:
+    mode: generate
+    format: "ayactf{%s}"
+    generator: server_files/generate.py
+  solver:
+    entrypoint: solver/solve.py
+    profile: python-crypto
+    timeoutMs: 30000
+  license: event
+
+hints:
+  - content: You have been given two moduli. What do they have in common?
+    cost: 0

@@ -1,0 +1,394 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f8faf4" />
+    <title>Aya's Number Challenge — A playground for curious minds.</title>
+    <meta
+      name="description"
+      content="A playground for curious minds. Explore cryptography puzzles, try a little number challenge, and discover Aya's challenge marketplace."
+    />
+    <meta property="og:title" content="Aya's Number Challenge" />
+    <meta
+      property="og:description"
+      content="Little numbers. Big discoveries. Cryptography puzzles for your next CTF."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://wondping0.github.io/ayas-playground/"
+    />
+    <link rel="canonical" href="https://wondping0.github.io/ayas-playground/" />
+    <link rel="icon" href="./assets/aya.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="wrap">
+      <a class="brand" href="./" aria-label="Aya's Number Challenge home"
+        ><img src="./assets/aya.svg" width="38" height="38" alt="" /><span
+          >aya<span class="brand-dot">.</span></span
+        ></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#collection">The challenges</a
+        ><a href="#how-it-works">How it works</a
+        ><a href="#authors">For creators</a>
+      </nav>
+      <a href="#warm-up" class="button small"
+        >Let's play <span aria-hidden="true">↗</span></a
+      >
+    </header>
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <p class="eyebrow">
+          <span class="leaf-dot" aria-hidden="true"></span> AYA'S NUMBER
+          CHALLENGE
+        </p>
+        <h1 id="hero-title">
+          Little numbers.<br /><span>Big <em>discoveries.</em></span>
+        </h1>
+        <p class="hero-description">
+          For the beautifully curious. Find a puzzle that makes you pause,<br
+            class="desktop-break"
+          />
+          follow the clues, and turn “what if” into “aha.”
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#collection"
+            >Find your next challenge <span aria-hidden="true">↗</span></a
+          ><a class="text-link" href="#warm-up"
+            >Start with a little warm-up <span aria-hidden="true">↓</span></a
+          >
+        </div>
+        <div class="hero-footnote">
+          <span>Cryptography puzzles</span
+          ><span class="tiny-dot" aria-hidden="true"></span
+          ><span>Made for your next CTF</span>
+        </div>
+        <div class="floating tile-two" aria-hidden="true">
+          <span>prime company</span><strong>2</strong
+          ><small>the only even one.</small>
+        </div>
+        <div class="floating tile-seven" aria-hidden="true">
+          <strong>7<span>✳</span></strong
+          ><small>a little mystery.</small>
+        </div>
+        <div class="floating tile-pi" aria-hidden="true">
+          <strong>π</strong><small>never quite finished.</small>
+        </div>
+        <div class="floating tile-x" aria-hidden="true">
+          <span>x + curiosity</span><strong>= aha!</strong>
+        </div>
+        <span class="hero-spark" aria-hidden="true">✳</span>
+      </section>
+      <section class="wrap warm-up" id="warm-up" aria-labelledby="warmup-title">
+        <div class="warmup-intro">
+          <p class="eyebrow">A SMALL DETOUR</p>
+          <h2 id="warmup-title">Your first “aha”<br />starts here.</h2>
+          <p>
+            Each number is the sum of the previous two.<br />What comes next?
+          </p>
+          <span class="pill">Just for fun · no signup</span>
+        </div>
+        <div class="puzzle">
+          <div
+            class="sequence"
+            aria-label="Sequence: 2, 3, 5, 8, 13, then an unknown number"
+          >
+            <span>2</span><span>3</span><span>5</span><span>8</span
+            ><span>13</span><span class="unknown">?</span>
+          </div>
+          <div
+            class="answer-options"
+            hidden
+            role="group"
+            aria-label="Choose the next number"
+          >
+            <span>Your pick</span
+            ><button type="button" data-answer="18" aria-pressed="false">
+              18</button
+            ><button type="button" data-answer="21" aria-pressed="false">
+              21</button
+            ><button type="button" data-answer="26" aria-pressed="false">
+              26
+            </button>
+          </div>
+          <p id="puzzle-feedback" role="status" aria-live="polite">
+            A tiny pattern. A satisfying discovery.
+          </p>
+          <details id="puzzle-solution">
+            <summary>Peek at the explanation</summary>
+            <p>
+              The answer is <strong>21</strong>: add the previous two numbers.
+              Here, 8 + 13 = 21. Keep going and the next number is 34.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="wrap collection section" id="collection">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE CURIOSITY COLLECTION</p>
+            <h2>A good puzzle<br />stays with you.</h2>
+          </div>
+          <p>
+            A glimpse of two example bundles.<br />Little ideas with
+            surprisingly big consequences.
+          </p>
+        </div>
+        <div class="challenge-grid">
+          <article class="challenge-card">
+            <div class="card-art prime-art" aria-hidden="true">
+              <span class="art-label">A STUDY IN SHARED SECRETS</span>
+              <div class="prime-equation">
+                <span>p</span><b>×</b><span>q</span>
+              </div>
+              <span class="art-note">Some things are better not shared.</span
+              ><span class="art-corner">01</span>
+            </div>
+            <div class="card-content">
+              <div class="card-tags">
+                <span>RSA weakness</span><span>Example bundle</span>
+              </div>
+              <h3>Shared primes</h3>
+              <p>
+                Two moduli, one careless generator. Find the common thread that
+                quietly unravels both secrets.
+              </p>
+              <details class="challenge-detail">
+                <summary>
+                  What's the idea? <span aria-hidden="true">↗</span>
+                </summary>
+                <p>
+                  When RSA moduli share a prime, a greatest-common-divisor
+                  calculation reveals that shared factor. This example rewards
+                  recognising the relationship.
+                </p>
+              </details>
+            </div>
+          </article>
+          <article class="challenge-card">
+            <div class="card-art pad-art" aria-hidden="true">
+              <span class="art-label">SOME PATTERNS ARE TOO FAMILIAR</span>
+              <div class="pad-equation">
+                <span>A</span><b>⊕</b><span>B</span>
+              </div>
+              <span class="art-note">Once is a secret. Twice is a clue.</span
+              ><span class="art-corner">02</span>
+            </div>
+            <div class="card-content">
+              <div class="card-tags">
+                <span>Keystream reuse</span><span>Example bundle</span>
+              </div>
+              <h3>Many-time pad</h3>
+              <p>
+                One keystream, five messages, and a familiar pangram. Discover
+                why “one-time” is part of the name.
+              </p>
+              <details class="challenge-detail">
+                <summary>
+                  What's the idea? <span aria-hidden="true">↗</span>
+                </summary>
+                <p>
+                  Reusing a keystream lets relationships between plaintext
+                  messages show through their ciphertexts. A known piece of one
+                  message can become a clue to another.
+                </p>
+              </details>
+            </div>
+          </article>
+        </div>
+        <p class="collection-note">
+          A look inside the project, not a live shop. These examples are not
+          available for purchase on this page.
+        </p>
+      </section>
+      <section class="journey" id="how-it-works">
+        <div class="wrap section">
+          <div class="journey-heading">
+            <p class="eyebrow">FROM CURIOSITY TO YOUR CTF</p>
+            <h2>Find it. Make it yours.<br />Let the solving begin.</h2>
+            <p>
+              Aya's Playground is a marketplace for challenge bundles.<br />You
+              bring the event. We help you find the puzzle.
+            </p>
+          </div>
+          <ol class="journey-steps">
+            <li>
+              <span class="step-number">01</span>
+              <h3>Follow your curiosity.</h3>
+              <p>
+                Explore the scheme, difficulty, and verification receipt. Pick
+                the kind of challenge your players will love.
+              </p>
+            </li>
+            <li>
+              <span class="step-number">02</span>
+              <h3>Take a closer look.</h3>
+              <p>
+                Before publication, the author's solver must recover the test
+                flag. The receipt is tied to that exact version.
+              </p>
+            </li>
+            <li>
+              <span class="step-number">03</span>
+              <h3>Bring it to life.</h3>
+              <p>
+                Receive a licensed bundle with the handout, solver, and writeup.
+                Run the challenge on your own infrastructure.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="wrap care section">
+        <div class="care-title">
+          <span class="care-symbol" aria-hidden="true">✓</span>
+          <p class="eyebrow">A LITTLE CARE BEHIND THE CURIOSITY</p>
+          <h2>Playful puzzles.<br />Thoughtful checks.</h2>
+        </div>
+        <div class="care-items">
+          <article>
+            <span>01</span>
+            <div>
+              <h3>A solve that has been checked.</h3>
+              <p>
+                The author's solver runs in an isolated sandbox. A passing
+                result shows it recovered the flag in that run; it doesn't
+                promise the absence of unintended solutions.
+              </p>
+            </div>
+          </article>
+          <article>
+            <span>02</span>
+            <div>
+              <h3>A fresh flag, when the format allows.</h3>
+              <p>
+                Re-flaggable bundles get an order-specific flag. Static bundles
+                keep the same fixed flag for every buyer. Fresh flags offer
+                traceability, not copy protection.
+              </p>
+            </div>
+          </article>
+          <article>
+            <span>03</span>
+            <div>
+              <h3>Your playground, your setup.</h3>
+              <p>
+                Aya supplies the artifact. Event hosting, live challenge
+                instances, and scoreboards stay with your own CTF platform.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="wrap creator" id="authors">
+        <div class="creator-art" aria-hidden="true">
+          <div class="note-paper">
+            <span>A LITTLE IDEA</span><strong>What if<br />p = q?</strong>
+            <div class="note-rule"></div>
+            <small>scribble. test. share.</small>
+          </div>
+          <span class="creator-flower">✳</span
+          ><span class="creator-label">Made by curious people.</span>
+        </div>
+        <div class="creator-copy">
+          <p class="eyebrow">FOR THE PEOPLE WHO WRITE THE RIDDLES</p>
+          <h2>Your next idea.<br />Someone's next <em>aha.</em></h2>
+          <p>
+            That challenge tucked away in your old CTF repo could have a whole
+            new audience. Package it with a solver and a writeup, and give your
+            idea another life.
+          </p>
+          <a class="button" href="mailto:wondev.support@gmail.com"
+            >Let's talk about your puzzle <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <section class="wrap faq section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">GOOD QUESTIONS</p>
+            <h2>Before you jump in.</h2>
+          </div>
+          <p>Curiosity is always welcome.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>
+              Is the marketplace open?<span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              The marketplace is in development. This page introduces the
+              project and includes a small number warm-up; it has no checkout,
+              account creation, or payment collection.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Are these all number puzzles?<span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              The number theme celebrates the curiosity behind cryptography. The
+              marketplace focuses on cryptography CTF challenges, from RSA
+              weaknesses to keystream reuse. The small sequence puzzle above is
+              just a warm-up.
+            </p>
+          </details>
+          <details>
+            <summary>
+              What comes in a challenge bundle?<span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              A challenge manifest, the player handout, the author's solver, and
+              a writeup. For generate-mode challenges, generator source is
+              included only with an unlimited licence.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Can I run the project without Docker?<span aria-hidden="true"
+                >+</span
+              >
+            </summary>
+            <p>
+              Yes, for UI development. The app can boot with an in-memory store
+              and a stub runner. The stub never passes verification; actual
+              verification requires the real sandbox runner.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="closing">
+        <div class="wrap">
+          <span class="closing-star" aria-hidden="true">✳</span>
+          <p class="eyebrow">THERE'S ALWAYS ANOTHER PATTERN TO FIND.</p>
+          <h2>Stay curious.<br />Keep playing.</h2>
+          <a class="button" href="mailto:wondev.support@gmail.com"
+            >Say hello <span aria-hidden="true">↗</span></a
+          >
+          <p>
+            <a href="mailto:wondev.support@gmail.com"
+              >wondev.support@gmail.com</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="wrap">
+      <a class="brand" href="./"
+        ><img src="./assets/aya.svg" width="32" height="32" alt="" /><span
+          >aya.</span
+        ></a
+      >
+      <p>Aya's Playground · A home for curious minds.</p>
+      <a href="https://wondping0.github.io/"
+        >More from the maker <span aria-hidden="true">↗</span></a
+      >
+    </footer>
+  </body>
+</html>

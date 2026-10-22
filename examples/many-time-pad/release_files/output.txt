@@ -1,0 +1,8 @@
+# Placeholder — regenerated per buyer by server_files/generate.py.
+# Committed so verification can check the generator produces every release file.
+
+00
+00
+00
+00
+00

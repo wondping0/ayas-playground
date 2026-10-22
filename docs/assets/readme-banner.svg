@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Aya's Playground</title>
+  <desc id="desc">A leaf-green playground for curious minds and cryptography challenges.</desc>
+  <rect width="1200" height="360" rx="24" fill="#f0f5e8"/>
+  <circle cx="1080" cy="30" r="225" fill="#d6edb7"/>
+  <text x="62" y="74" fill="#39753b" font-family="Arial,sans-serif" font-size="14" letter-spacing="3">CRYPTOGRAPHY FIRST. CURIOSITY ALWAYS.</text>
+  <text x="58" y="167" fill="#223d27" font-family="Arial,sans-serif" font-weight="700" font-size="66">Aya's Playground</text>
+  <text x="62" y="222" fill="#596651" font-family="Arial,sans-serif" font-size="23">Little numbers. Big discoveries.</text>
+  <text x="62" y="300" fill="#39753b" font-family="Arial,sans-serif" font-size="16">CHALLENGE BUNDLES / SOLVER VERIFICATION / YOUR CTF</text>
+  <g transform="translate(825 106) rotate(-9)"><rect width="123" height="157" rx="18" fill="#fffef6" stroke="#b9d1a6"/><text x="61" y="111" text-anchor="middle" fill="#39753b" font-family="Georgia,serif" font-style="italic" font-size="100">2</text></g>
+  <g transform="translate(985 133) rotate(10)"><rect width="123" height="157" rx="18" fill="#39753b"/><text x="61" y="111" text-anchor="middle" fill="#f0f5e8" font-family="Georgia,serif" font-style="italic" font-size="100">7</text></g>
+</svg>

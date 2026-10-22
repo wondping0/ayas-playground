@@ -1,0 +1,21 @@
+node_modules/
+.next/
+out/
+dist/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.log
+.claude/settings.local.json
+
+# Forge working state — sandbox run directories and stored artifacts.
+.aya-data/
+
+.DS_Store
+Thumbs.db

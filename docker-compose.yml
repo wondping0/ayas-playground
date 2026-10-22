@@ -1,0 +1,27 @@
+# Postgres for local development.
+#
+#   docker compose up -d
+#   DATABASE_URL=postgres://aya:aya@localhost:5433/aya npm run db:migrate
+#
+# The sandbox is NOT a service here. It is started per run by the forge with a
+# specific set of isolation flags (src/lib/forge/docker-args.ts); expressing it
+# as a long-lived compose service would lose every one of them.
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: aya
+      POSTGRES_PASSWORD: aya
+      POSTGRES_DB: aya
+    ports:
+      - '5433:5432'
+    volumes:
+      - aya-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U aya']
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  aya-pgdata:

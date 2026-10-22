@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "wondevVersion": "1.1.1",
+  "files": {
+    ".claude/agents/code-reviewer.md": {
+      "hash": "43e7e019703acf9733248183be15d3a37ac7919496024987a5b5867d53e251f3",
+      "target": "claude",
+      "mode": "whole"
+    },
+    ".claude/commands/new-scheme.md": {
+      "hash": "bc4d85000468b019595fadf226ee5fcdb67c647b50ed244c545dddf3045b53a7",
+      "target": "claude",
+      "mode": "whole"
+    },
+    ".claude/commands/onboard.md": {
+      "hash": "fad0e0ec4cb1df2aad0746a760d718bf8f0c6c225a65b3df35dd99ab0c727190",
+      "target": "claude",
+      "mode": "whole"
+    },
+    ".claude/commands/review.md": {
+      "hash": "4c6df103a5b5a178a173f459ee36f89a0bde9a8b1b7ff8b398627d994ce30968",
+      "target": "claude",
+      "mode": "whole"
+    },
+    ".claude/skills/changing-the-money-path/SKILL.md": {
+      "hash": "5eed2b41f82e8a832528a85a66e831d3ea3b9bc88ed5e829708d2b5620707a72",
+      "target": "claude",
+      "mode": "whole"
+    },
+    ".claude/skills/changing-the-sandbox/SKILL.md": {
+      "hash": "375db26658b190074dfae07efcb57e41010d3f3ddc4dda15c20a4fc01d51da1d",
+      "target": "claude",
+      "mode": "whole"
+    },
+    ".claude/skills/code-review/SKILL.md": {
+      "hash": "b3625b49f70a772663b79b52bb1e8faa6a04a5d756f64691ac5b4b31a93958d3",
+      "target": "claude",
+      "mode": "whole"
+    },
+    ".claude/skills/debugging/SKILL.md": {
+      "hash": "07e13474dd7711957b6f321edefdd60f6052e304346a7d3d5f38bcfffd79d96e",
+      "target": "claude",
+      "mode": "whole"
+    },
+    ".claude/skills/git-workflow/SKILL.md": {
+      "hash": "f63f95541a187a82e084ee9b22060257f6f2ff5a447677a484b227036b82adae",
+      "target": "claude",
+      "mode": "whole"
+    },
+    ".claude/skills/planning-work/SKILL.md": {
+      "hash": "ebe4628f3b1cad6499e804b3ab38528c69efe3fd2d5eec9a4e17c6f291888097",
+      "target": "claude",
+      "mode": "whole"
+    },
+    ".claude/skills/verify-before-done/SKILL.md": {
+      "hash": "34533f244745cf8a049fbef56c64e65f0e81418c3bb08e83a2666426852c4021",
+      "target": "claude",
+      "mode": "whole"
+    },
+    ".claude/skills/writing-tests/SKILL.md": {
+      "hash": "9903b3d4fbac3b1e429890fabcfa9c029bc251ab3a680303590011c6cdf0a5e0",
+      "target": "claude",
+      "mode": "whole"
+    },
+    "AGENTS.md": {
+      "hash": "b5df658078aa6ff38f6643dd2155c4a06f8a253a88c93558570b14e059163497",
+      "target": "agents",
+      "mode": "region"
+    },
+    "CLAUDE.md": {
+      "hash": "cea9aab5b2dfb2fbbc97ad9882197d23e202986494336b2853d6e7c64e1ca685",
+      "target": "claude",
+      "mode": "region"
+    },
+    "docs/memory-index.md": {
+      "hash": "3fb6fa5799baef4b65698388c38adb4cd682b33749f8370844a6b175c57c3b5e",
+      "target": "index",
+      "mode": "region"
+    },
+    "GUIDE.html": {
+      "hash": "18bef759d920ceefd9a6ac24521d5cfd084546117234623e335fc460b02d15f8",
+      "target": "guide",
+      "mode": "whole"
+    }
+  }
+}

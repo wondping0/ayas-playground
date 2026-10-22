@@ -1,0 +1,11 @@
+# Placeholder.
+#
+# This file is regenerated for every buyer by server_files/generate.py, with
+# that buyer's own flag. What is committed here only records which release
+# files the generator is expected to produce — verification fails if it
+# produces fewer.
+
+e  = 65537
+n1 = 0
+n2 = 0
+c  = 0

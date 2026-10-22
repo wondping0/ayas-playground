@@ -1,0 +1,65 @@
+{
+  "version": "1.1.1",
+  "files": {
+    "agents/code-reviewer.md": {
+      "hash": "b427335e20f530f13f17592cee606cb57499d4c1e040b8bf24e4c770cb51fc05",
+      "from": "1.1.1"
+    },
+    "commands/onboard.md": {
+      "hash": "d9874e1328a42a7a5bb2ae833c3a882b2015fd0f5be0ded0ea9998696f441c6f",
+      "from": "1.1.1"
+    },
+    "commands/review.md": {
+      "hash": "e9c6b37e10f548e48d2fb5c33d4edceed6605ae906f953972f8a3dc9c3f6fbf4",
+      "from": "1.1.1"
+    },
+    "memory/architecture.md": {
+      "hash": "07a052c6e200ddf0c736863be2940427efb97a703d5eb993226c9b2a2f6a1562",
+      "from": "1.1.1"
+    },
+    "memory/context-discipline.md": {
+      "hash": "24154fa494ea6b93da27c6a60eebef2f1f00f82ad5200cd748604e9221407c96",
+      "from": "1.1.1"
+    },
+    "memory/conventions.md": {
+      "hash": "92f68be12aa51b041eb15ad876c1bddb45e3c18f82f0cb12ea00a89a084e357f",
+      "from": "1.1.1"
+    },
+    "memory/decisions/0001-record-architecture-decisions.md": {
+      "hash": "d8c22e7ad9ca19375ac76090b425dc24e0055ab72550b40d28fb0471e88f97a2",
+      "from": "1.1.1"
+    },
+    "memory/glossary.md": {
+      "hash": "77b7a46ccafd9414cae4a70b13986d9e9148428081c094363419c10e1ad118cf",
+      "from": "1.1.1"
+    },
+    "README.md": {
+      "hash": "7e9add96ceb4244143fe0985aa462fcf37ab21f3d8cbed787add1d446b4539b0",
+      "from": "1.1.1"
+    },
+    "skills/code-review/SKILL.md": {
+      "hash": "32e2f04cc2facd63ca032dc4965180fc5abe8f7e58cb32f109cfb21a7b488bae",
+      "from": "1.1.1"
+    },
+    "skills/debugging/SKILL.md": {
+      "hash": "bacaaf15f52b151e41925e6ae96057059dce9d939e2d08ce9b12cf5ec9d88e2f",
+      "from": "1.1.1"
+    },
+    "skills/git-workflow/SKILL.md": {
+      "hash": "27cdf7dbfc7cd7c2ec72e821768c12e6e1ea263cc77f6273d76e3c5885a00d57",
+      "from": "1.1.1"
+    },
+    "skills/planning-work/SKILL.md": {
+      "hash": "4a592de4954ff1eedf4bcc568e4ea935b7bd8b7f3f736295ec822cd441bbfa94",
+      "from": "1.1.1"
+    },
+    "skills/verify-before-done/SKILL.md": {
+      "hash": "0577244c1bb8602b17a8a9641970deb552774636767231563e1c71fac93e191a",
+      "from": "1.1.1"
+    },
+    "skills/writing-tests/SKILL.md": {
+      "hash": "f5e570b95344e66e69a0bbf1f76a84fd7a43fff19f26e8b7332ff9f3f5ad119d",
+      "from": "1.1.1"
+    }
+  }
+}
